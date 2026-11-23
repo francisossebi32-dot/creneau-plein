@@ -5,6 +5,7 @@ import "./globals.css";
 const bricolage = Bricolage_Grotesque({ subsets: ["latin"], variable: "--font-bricolage", weight: ["700", "800"], display: "swap" });
 const instrument = Instrument_Sans({ subsets: ["latin"], variable: "--font-instrument", weight: ["400", "500", "600"], display: "swap" });
 
+
 export const metadata: Metadata = {
   title: "Créneau Plein — Un rendez-vous annulé est reproposé dans la minute",
   description: "Une annulation laisse un trou dans ton agenda. Créneau Plein le propose aussitôt à ta liste d'attente. Le premier qui confirme l'obtient.",
