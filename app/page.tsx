@@ -11,6 +11,8 @@ const benefices = [
   { t: "Le premier qui confirme l'obtient", d: "Ton agenda se met à jour. Tu vois combien d'euros tu as récupérés." },
 ];
 
+const LIEN_PAIEMENT = "https://buy.stripe.com/test_cNicN579j1pwe7Sc0rgrS00";
+
 export default function Accueil() {
   return (
     <main className="mx-auto max-w-xl px-5 pb-28 pt-8 md:max-w-3xl md:pt-16">
@@ -42,11 +44,12 @@ export default function Accueil() {
       </div>
 
       <a
-        href="#acces"
+        href={LIEN_PAIEMENT}
         className="mt-8 block w-full bg-signal px-6 py-5 text-center font-titre text-xl font-bold text-white active:translate-y-px focus-visible:outline-4 focus-visible:outline-offset-2 focus-visible:outline-sapin md:inline-block md:w-auto md:px-12"
       >
-        Commencer, c'est gratuit
+        Réserver mon accès, 29 € par mois
       </a>
+      <p className="mt-3 text-sm text-sapin/80">Sans engagement, résiliable à tout moment. Remboursé si tu n'es pas satisfait.</p>
 
       <ul className="mt-14 space-y-6 border-t-2 border-sapin pt-8">
         {benefices.map((b) => (
@@ -60,7 +63,7 @@ export default function Accueil() {
       <section id="acces" className="mt-14 bg-sapin p-6 text-papier">
         <h2 className="font-titre text-2xl font-bold">Accès anticipé</h2>
         <p className="mt-2 leading-snug">
-          Créneau Plein est en construction. Les premiers inscrits l'ont à 29 € par mois, sans engagement, et remboursés s'ils ne sont pas satisfaits. L'inscription ouvre très bientôt sur cette page.
+          Créneau Plein est en construction. Les premiers inscrits l'ont à 29 € par mois, sans engagement, et sont remboursés s'ils ne sont pas satisfaits.
         </p>
       </section>
     </main>
