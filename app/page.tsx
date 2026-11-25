@@ -12,6 +12,7 @@ const benefices = [
 ];
 
 const LIEN_PAIEMENT = "https://buy.stripe.com/test_cNicN579j1pwe7Sc0rgrS00";
+const EMAIL = "francisossebi32@gmail.com";
 
 export default function Accueil() {
   return (
@@ -49,7 +50,14 @@ export default function Accueil() {
       >
         Réserver mon accès, 29 € par mois
       </a>
-      <p className="mt-3 text-sm text-sapin/80">Sans engagement, résiliable à tout moment. Remboursé si tu n'es pas satisfait.</p>
+      <p className="mt-3 text-sm text-sapin/80">Sans engagement, résiliable à tout moment.</p>
+
+      <div className="mt-4 border-l-4 border-sapin bg-white/40 p-4 text-sm leading-snug">
+        <p className="font-titre text-base font-bold text-sapin">Satisfait ou remboursé pendant 30 jours.</p>
+        <p className="mt-1">
+          Écris-moi à <a className="underline" href={`mailto:${EMAIL}`}>{EMAIL}</a> avec l'adresse utilisée pour le paiement. Pas de justification à donner. Remboursement sous 5 jours ouvrés, sur la carte utilisée.
+        </p>
+      </div>
 
       <ul className="mt-14 space-y-6 border-t-2 border-sapin pt-8">
         {benefices.map((b) => (
